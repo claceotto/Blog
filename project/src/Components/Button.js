@@ -1,4 +1,4 @@
-
+import Button from 'react-bootstrap/Button';
 
 const Button = ({ text }) => {
     return (
