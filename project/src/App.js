@@ -1,10 +1,9 @@
-import './App.scss';
-import Button from './Components/Button';
+import '../src/Style/App.scss';
+import Button from 'react-bootstrap/Button';
 
 function App() {
   return (
-    <Button
-      text={'example'} />
+    <Button variant="primary">example</Button>
   );
 }
 
