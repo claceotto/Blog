@@ -1,16 +1,15 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
 
-const HeroCard = ({ cardTitle, cardSubTitle, cardText, buttonText }) => {
+
+const HeroCard = ({ cardTitle, cardSubTitle, cardText, buttonText, image }) => {
     return (
         <Card style={{ width: '18rem' }}>
             <Container className='d-flex py-2 justify-content-center'>
 
-                <Image src="https://i.pravatar.cc/150?img=16" roundedCircle />
+                <Image src={image} roundedCircle />
             </Container>
             <Card.Body>
                 <Card.Title>{cardTitle}</Card.Title>
